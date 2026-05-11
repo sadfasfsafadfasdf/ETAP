@@ -1,26 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Digitalizador de Curvas de Fusibles para ETAP - V5
+Digitalizador de Curvas de Fusibles para ETAP
 --------------------------------------------------------
 Herramienta independiente en Python para digitalizar curvas TCC/fusibles a partir
  de imágenes, definiendo ejes, límites y puntos seleccionados manualmente.
-
-Cambios V4:
-- Se agrega la sección 5. Ayuda rápida al lado de 1. Imagen.
-- La sección Acciones pasa a ser 6. Acciones y queda al lado derecho de 2. Información del fusible.
-
-Cambios V3:
-- Se reubica la sección Acciones en una columna lateral junto a 1. Imagen para que el botón Generar Excel quede visible.
-
-Cambios V2:
-- Dos pestañas de captura: Mínima de Fusión y Total de Aclaramiento.
-- Cada pestaña tiene su propia lista de puntos.
-- Exportación a Excel con formato similar al archivo ejemplo:
-    Fila 2: Mínima de Fusión / Total de Aclaramiento
-    Fila 3: Nombre del fusible / curva
-    Fila 4: Time / Current / Time / Current
-    Columnas A:B para Mínima de Fusión y C:D para Total de Aclaramiento.
-- Exportación opcional de una hoja de configuración y trazabilidad.
 
 Uso típico para curvas de fusibles:
 - Eje X: Corriente [A], normalmente logarítmico.
@@ -30,7 +13,7 @@ Uso típico para curvas de fusibles:
 Requisitos:
     pip install pillow pandas openpyxl
 
-Autor: Herramienta generada con ChatGPT para flujos técnicos ETAP / estudios eléctricos.
+Autor: Andres Vergara
 """
 
 import os
